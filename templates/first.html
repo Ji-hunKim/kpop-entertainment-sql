@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<table border = "1">
+  <thead>
+    <th>그룹명</th>
+    <th>데뷔년도</th>
+    <th>멤버</th>
+    <th>나이</th>
+    <th>급여</th>
+
+
+  </thead>
+
+  <tbody>
+   {% for user in users %}
+      <tr>
+       <td> {{ user[0] }} </td>
+       <td> {{ user[1] }} </td>
+       <td> {{ user[2] }} </td>
+       <td> {{ user[3] }} </td>
+       <td> {{ user[4] }} </td>
+      </tr>
+   {% endfor %}
+  </tbody>
+</table>
+
+
+
+</body>
+</html>
